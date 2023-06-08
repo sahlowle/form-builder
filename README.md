@@ -9,6 +9,12 @@
 - check your internet connection.
 - this laravel verison is 8.
 
+Clone the project  
+
+~~~bash  
+  git clone https://github.com/sahlowle/form-builder
+~~~
+
 ## Usage:
 
 
