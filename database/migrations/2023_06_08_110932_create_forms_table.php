@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateFormSubmissionsTable extends Migration
+class CreateFormsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,18 +13,23 @@ class CreateFormSubmissionsTable extends Migration
      */
     public function up()
     {
-        Schema::create('form_submissions', function (Blueprint $table) {
-            $table->increments('id');
-
-            $table->unsignedInteger('form_id');
+        Schema::create('forms', function (Blueprint $table) {
+            $table->id();
 
             $table->unsignedBigInteger('user_id')->nullable();
 
-            $table->text('content');
+            $table->string('name');
+            $table->string('visibility');
+            $table->boolean('allows_edit')->default(false);
 
+            $table->string('identifier')->unique();
+            $table->text('form_builder_json')->nullable();
+
+            $table->string('custom_submit_url')->nullable();
+
+            $table->softDeletes();
             $table->timestamps();
 
-            $table->foreign('form_id')->references('id')->on('forms')->onDelete('CASCADE');
             $table->foreign('user_id')->references('id')->on('users')->onDelete('CASCADE');
         });
     }
@@ -36,6 +41,6 @@ class CreateFormSubmissionsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('form_submissions');
+        Schema::dropIfExists('forms');
     }
 }
