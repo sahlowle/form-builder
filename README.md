@@ -55,10 +55,6 @@ Email: user@gmail.com
 
 password: 12345678
 ```
-
-
-
-
 ## Credits
 
 - [Suhail Osman][link-author]
