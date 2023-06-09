@@ -58,9 +58,14 @@ password: 12345678
 
 
 
+
 ## Credits
 
 - [Suhail Osman][link-author]
+- [All Contributors][link-contributors]
 
+## License
+
+MIT. Please see the [license file](license.md) for more information.
 
 
