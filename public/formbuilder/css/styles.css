@@ -20,3 +20,6 @@
 .d-inline-block {
 	display: inline-block !important;
 }
+.parsley-required{
+	color: red;
+}
