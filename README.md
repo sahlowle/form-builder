@@ -39,6 +39,11 @@ php artisan storage:link
 ```
 
 
+## Generate Key  
+
+```
+php artisan key:generate
+```
 ## Run Locally  
 
 now you can run the app 
