@@ -25,7 +25,9 @@ composer install
 ```
 
 # Database and Seeds:
-run command to migrate tables and seed data
+- edit .env file and add your database connection.
+- run command to migrate tables and seed data.
+
 ```bash
 php artisan migrate --seed
 ```
