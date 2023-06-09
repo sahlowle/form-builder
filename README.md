@@ -57,8 +57,8 @@ password: 12345678
 ```
 ## Credits
 
-- [Suhail Osman][link-author]
-- [All Contributors][link-contributors]
+- [Suhail Osman](link-author)
+- [All Contributors](link-contributors)
 
 ## License
 
